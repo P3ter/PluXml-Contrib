@@ -1,4 +1,4 @@
 PluXml
 ======
 
-Mes travaux sur PluXml (plugins, boutons editeurs, etc)
+Works on PluXml (plugins, the¨mes, ...)
