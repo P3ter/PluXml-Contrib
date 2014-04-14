@@ -1,4 +1,4 @@
 PluXml
 ======
 
-Works on PluXml (plugins, the¨mes, ...)
+Works on PluXml (plugins, themes, ...)
