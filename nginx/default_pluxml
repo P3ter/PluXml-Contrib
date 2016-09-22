@@ -1,0 +1,38 @@
+server {
+    listen 80;
+    server_name nom_du_site;
+
+    root    /var/www/site;
+    index  index.php index.html;
+
+    # Rewrite to index
+    location @handler {
+        rewrite ^/(.*)$ /index.php?$1 last;
+    }
+
+    # Main rule: check if file, folder, else redirect to the handler
+    location / {
+        try_files $uri $uri/ @handler;
+    }
+
+    location /feed/ {
+        rewrite ^/feed\/(.*)$ /feed.php?$1 last;
+    }
+
+    location ~ \.php$ {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        # NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
+        include fastcgi.conf;
+        fastcgi_index index.php;
+
+	# Use PHP5 or PHP7, NOT both
+        #fastcgi_pass unix:/run/php5-fpm.sock;
+        fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+    }
+
+    # Directory protection
+    location /data/configuration { deny all; }
+    location /version   { deny all; }
+    location /update    { deny all; }
+    location /readme    { deny all; }
+}
