@@ -2,7 +2,7 @@
 ##
 ## Migration du plugin Vignette vers la solution native de PluXml
 ##
-## Compatibillité : PluXml 5.4 et supérieur
+## Compatibillité : PluXml 5.5 et supérieur
 ## Auteur : P3ter (http://p3ter.fr)
 ## Licence : GPL
 ##
@@ -23,7 +23,7 @@ chaineThumbnail="<thumbnail><!\[CDATA\[data\/medias\/"
 chaineVignette1="<\/vignette>"
 chaineThumbnail1="<\/thumbnail>"
 
-# Thumbnail vide pour les articles ayant été créés après PluXml 5.4
+# Thumbnail vide pour les articles ayant été créés après PluXml 5.5
 chaineThumbnailVide="<thumbnail><!\[CDATA\[\]\]><\/thumbnail>"
 
 for file in *.xml
