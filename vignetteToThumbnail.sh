@@ -30,10 +30,10 @@ chaineThumbnailVide="<thumbnail><!\[CDATA\[\]\]><\/thumbnail>"
 for file in *.xml
 do
     echo "Traitement de $file ..."
-		# remplacement du début de la chaine
+    # remplacement du début de la chaine
     sed -i -e "s/$chaineVignette/$chaineThumbnail/g" "$file"
     #remplacement de la fin de la chaine
-		sed -i -e "s/$chaineVignette1/$chaineThumbnail1/g" "$file"
+    sed -i -e "s/$chaineVignette1/$chaineThumbnail1/g" "$file"
     # suppression du Thumbnail vide si il existe
-		sed -i -e "/$chaineThumbnailVide/d" "$file"
+    sed -i -e "/$chaineThumbnailVide/d" "$file"
 done 
