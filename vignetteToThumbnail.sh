@@ -5,7 +5,8 @@
 ## Compatibillité : PluXml 5.5 et supérieur
 ## Auteur : P3ter (http://p3ter.fr)
 ## Licence : GPL
-##
+## Version : 1.0
+## 
 ## Aide : 
 ## le fichier doit être exécuter à la racine du dossier /data/articles/
 ## attribution des droits : chmod u+x vignetteToThumbnail.sh
