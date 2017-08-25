@@ -1,11 +1,9 @@
-## vignetteToThumbnail.sh
-##
-## Migration du plugin Vignette vers la solution native de PluXml
+## Migration du plugin Vignette vers la solution native de PluXml 5.5
 ##
 ## Compatibillité : PluXml 5.5 et supérieur
 ## Auteur : P3ter (http://p3ter.fr)
 ## Licence : GPL
-## Version : 1.0
+## Version : 1.1
 ## 
 ## Aide : 
 ## le fichier doit être exécuter à la racine du dossier /data/articles/
@@ -13,7 +11,7 @@
 ## exécution du script : ./vignetteToThumbnail.sh
 ##
 ## ATTENTION : faites une sauvegarde de tous vos articles (data/articles/) avant de lancer le script
-
+##
 #!/bin/bash
 
 # début de la chaine à remplacer
